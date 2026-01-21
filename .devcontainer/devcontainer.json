@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schema/devcontainer.json",
+  "name": "QA Portfolio Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    },
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:1": {},
+    "ghcr.io/devcontainers/features/azure-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-playwright.playwright",
+        "ms-python.python",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "eamodio.gitlens",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode-remote.remote-containers"
+      ],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+      }
+    }
+  },
+  "forwardPorts": [3000, 8080, 9222],
+  "containerEnv": {
+    "CI": "false",
+    "NODE_ENV": "development"
+  },
+  "postCreateCommand": "bash .devcontainer/post-create.sh || true",
+  "postStartCommand": "bash .devcontainer/post-start.sh || true",
+  "remoteUser": "vscode",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopContainer"
+}
