@@ -1,1 +1,216 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mpumelelo Nozipho Msane</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mpumelelo Msane</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="" alt="" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1 heading">Hello, I'm</p>
+        <h1 class="title">Mpumelelo 'Lelo' Msane</h1>
+        <p class="section__text__p2 heading">Quality Assurance Engineer</p>
+        <p>Welcome to my page! I’m glad you stopped by.</p>
+        <br />
+        <p>
+          I created this page to provide you with a clear understanding of my
+          contributions to past projects. Feel free to navigate through the
+          different sections to get a deeper look at my expertise.
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('')"
+          >
+            View my blog
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('https://medium.com/mpumelelomsane')"
+          >
+            Visit GitHub
+          </button>
+        </div>
+      </div>
+      <img
+        src=""
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#about'"
+      />
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Here Is Some Information</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src=""
+            alt=""
+            class=""
+          />
+        </div>
+        <div class="">
+          <div class="">
+            <div class="">
+              <img
+                src=""
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Coding and Robotics facilitator</h3>
+              <p></p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>National Certificate: Information Technology(Systems Development)</p>
+              <p>Diploma in Software Testing</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <div class="text-about">
+              <p>
+                I am Mpumelelo Msane, your friendly & radiant Software QA engineer
+                based in Richards Bay, KwaZulu-Natal, South Africa.
+                
+                I don't just find bugs; I also ensure software QUALITY and SECURITY.
+                I hold a National Certificate in Information Technology and nearly one year
+                experience as a Coding and Robotics Facilitator. While I've had a brief stint
+                as a Software Developer, my true passion lies in ensuring I deliver
+                quality software with a smooth user experience.
+                <p>
+          
+          
+              <p>
+                I have mastered the entire Software Test Life Cycle 
+                I am proficient in designing and executing comprehensive
+                test cases, and skilled at identifying and documenting software
+                defects using a wide range of tools like Postman and Swagger. Currently 
+                With a
+                commitment to continuous improvement and a passion for learning,
+                I am excited to contribute effectively to your QA team.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-content">
+        <div class="experience-details-container">
+          <div class="details-container">
+            <h2>Technical Skills</h2>
+            <div class="inline-section">
+              <h3>Languages</h3>
+              <p>Python, Java, C#, HTML, CSS, SQL,</p>
+            </div>
+            <div class="inline-section">
+              <h3>Test Automation</h3>
+              <p>Selenium WebDriver, WebdriverIO, Pytest, Junit, </p>
+            </div>
+            <div class="inline-section">
+              <h3>Developer Tools</h3>
+              <p>Git, GitHub, Chrome DevTools, Visual Studio Code, intelliJ, PyCharm</p>
+            </div>
+            <div class="inline-section">
+              <h3>Testing Tools</h3>
+              <p>Postman, Swagger</p>
+            </div>
+            <div class="inline-section">
+              <h3>Types of Testing</h3>
+              <p>UI Testing, API Testing, Smoke Testing, Regression Testing, Exploratory Testing, Test Automation, Manual Testing, etc.</p>
+            </div>
+          </div>
+         
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:msanempumey@gmail.com"
+              >msanempumey@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/mpumelelo-msane"
+              target="_blank"
+              >LinkedIn</a
+            >
+         
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
