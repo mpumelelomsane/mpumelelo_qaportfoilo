@@ -37,6 +37,5 @@
   "postCreateCommand": "bash .devcontainer/post-create.sh || true",
   "postStartCommand": "bash .devcontainer/post-start.sh || true",
   "remoteUser": "vscode",
-  "workspaceFolder": "/workspace",
   "shutdownAction": "stopContainer"
 }
